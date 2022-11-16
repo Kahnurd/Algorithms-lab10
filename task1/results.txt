@@ -1,0 +1,13 @@
+Task 1:
+ It starts with an empty stack
+
+ then it sends SZ to the stack, S being our start variable, Z being the last
+	symbol in the stack.
+
+ Then each rule from the CFG needs to be added in some loop in q1.
+More or less every time we need to add an a or a b to the stack, we need
+to do so on both sides of S. Then every time there is an a or a b on the top
+of the stack we need to be able to read it from the input and pop it off the stack.
+Finally there needs to be a way for S to terminate, so we add ways to turn it
+into epsilon, b, or a. Then once the stack is empty (when Z is on top of the stack),
+we go to the accept state (q2).
