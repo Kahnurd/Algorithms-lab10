@@ -16,6 +16,8 @@ way, so no matter how it decreases or increases they will = eachother's length.
 
 However, I don't see a strategy for odd values of m.
 
-This language cannot be pumped out, because there is no way to guarantee that VXY, when the
-pumping length is even, is not perfectly placed between the b's and c's section. Therefore,
-it is a CFG.
+This language is a CFL because it would be possible to make a PDA for it.
+You could put an a in the stack for every a in the first section, then put a b\
+in the stack for every b in the next section. Then once you get to d, you put a d in
+for every b in the stack. Then once you get to the a's in the stack, you put as many c's
+as you want, unless you run out of a's, then you have to at least put one more a in.
